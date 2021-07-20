@@ -19,7 +19,7 @@
  각 테스트 케이스 사이에는 빈 줄을 하나 출력한다.
  */
 #include <iostream>
-#define MAX 50
+#define MAX 13
 using namespace std;
 
 int n;
