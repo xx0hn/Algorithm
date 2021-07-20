@@ -22,7 +22,6 @@ int n, m;
 vector<pair<int, int>> Bus[MAX];
 int start, destination;
 int dist[MAX];
-bool chk[MAX];
 
 void Input(){
     cin>>n>>m;
@@ -34,7 +33,6 @@ void Input(){
     cin>>start>>destination;
     for(int i=1; i<=n; i++){
         dist[i]=INF;
-        chk[i]=false;
     }
 }
 
