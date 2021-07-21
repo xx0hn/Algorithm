@@ -26,7 +26,6 @@ using namespace std;
 int m,n, k;
 int result=0;
 int graph[MAX][MAX];
-bool visited[MAX][MAX];
 queue<pair<int, int>> tomato;
 int dx[4]={1,0,-1,0};
 int dy[4]={0,1,0,-1};
@@ -40,7 +39,6 @@ void Input(){
             if(graph[i][j]==1){
                 tomato.push(make_pair(i, j));
             }
-            visited[i][j]=false;
         }
     }
 }
