@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  practice.cpp
-//
-//  Created by 황승환 on 2020/05/06.
-//  Copyright © 2020 황승환. All rights reserved.
-//
-
 /*
  문제
  다음 소스는 N번째 피보나치 수를 구하는 C++ 함수이다.
