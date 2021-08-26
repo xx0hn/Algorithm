@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  practice.cpp
-//
-//  Created by 황승환 on 2020/05/06.
-//  Copyright © 2020 황승환. All rights reserved.
-//
-
 /*
  문제
  정수를 저장하는 스택을 구현한 다음, 입력으로 주어지는 명령을 처리하는 프로그램을 작성하시오.
