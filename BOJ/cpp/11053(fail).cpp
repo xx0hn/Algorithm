@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  practice.cpp
-//
-//  Created by 황승환 on 2020/05/06.
-//  Copyright © 2020 황승환. All rights reserved.
-//
-
 /*
  문제
  수열 A가 주어졌을 때, 가장 긴 증가하는 부분 수열을 구하는 프로그램을 작성하시오.
