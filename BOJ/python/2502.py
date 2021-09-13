@@ -15,7 +15,6 @@
 d,k=map(int, input().split())
 ac=1
 bc=0
-breaker=False
 for i in range(d-1):
     ac, bc=bc, ac+bc
 for i in range(1, 1000000):
