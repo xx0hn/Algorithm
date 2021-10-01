@@ -45,7 +45,6 @@
  출처: https://www.acmicpc.net/problem/2448
  */
 #include <iostream>
-#include <cstring>
 #define MAX 2*(3072+1)
 using namespace std;
 
