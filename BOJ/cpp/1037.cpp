@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  practice.cpp
-//
-//  Created by 황승환 on 2020/05/06.
-//  Copyright © 2020 황승환. All rights reserved.
-//
-
 /*
  문제
  양수 A가 N의 진짜 약수가 되려면, N이 A의 배수이고, A가 1과 N이 아니어야 한다. 어떤 수 N의 진짜 약수가 모두 주어질 때, N을 구하는 프로그램을 작성하시오.
