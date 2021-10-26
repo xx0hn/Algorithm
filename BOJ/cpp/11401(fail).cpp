@@ -1,12 +1,5 @@
 //
-//  main.cpp
-//  practice.cpp
-//
-//  Created by 황승환 on 2020/05/06.
-//  Copyright © 2020 황승환. All rights reserved.
-//
-
-/*
+//*
  문제
  자연수N과 정수K가 주어졌을 때 이항 계수(KN)를 1,000,000,007로 나눈 나머지를 구하는 프로그램을 작성하시오.
 
