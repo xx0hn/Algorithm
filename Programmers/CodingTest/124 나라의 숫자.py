@@ -27,10 +27,10 @@ def solution(n):
     while n:
         t = n%3
         if t == 0:
-            t=3
+            t=4
             n-=1
         result.append(str(t))
         n//=3
     result=result[::-1]
-    answer = ''.join(result[::1]).replace(str(3), str(4))
+    answer = ''.join(result[::1])
     return answer
