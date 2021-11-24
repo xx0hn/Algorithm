@@ -19,9 +19,6 @@ for i in range(t):
     l=list(map(int, input().split()))
     l.sort()
     arr=[]
-    arr.append(l[0])
-    l.pop(0)
-    i=0
     while len(l)>0:
         arr.insert(0, l[0])
         l.pop(0)
