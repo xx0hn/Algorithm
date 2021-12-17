@@ -19,7 +19,6 @@ cur=0
 chk=0
 while len(line)>cur:
     if line[cur]=='<':
-        cur+=1
         while line[cur]!='>':
             cur+=1
         cur+=1
