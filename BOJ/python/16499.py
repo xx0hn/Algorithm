@@ -9,7 +9,6 @@
 # 출력
 # 첫째 줄에 그룹의 최소 개수를 출력한다.
 n=int(input())
-chk=[]
 word=[]
 for i in range(n):
     word.append(str(input()))
