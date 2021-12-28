@@ -10,8 +10,6 @@
 # 문자열 S가 "pi", "ka", "chu"를 이어 붙여서 만들 수 있으면 "YES"를 아니면 "NO"를 출력한다.
 s=str(input())
 pikachu=['pi', 'ka', 'chu']
-tmp=''
-length=len(s)
 i=0
 while i <= len(s):
     if s[:i] in pikachu:
