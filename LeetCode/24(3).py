@@ -1,40 +1,36 @@
-# 2. Add Two Numbers
+# 24. Swap Nodes in Pairs
 # Medium
 
-# 15813
+# 5375
 
-# 3404
+# 262
 
 # Add to List
 
 # Share
-# You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
-
-# You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+# Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
 
  
 
 # Example 1:
 
 
-# Input: l1 = [2,4,3], l2 = [5,6,4]
-# Output: [7,0,8]
-# Explanation: 342 + 465 = 807.
+# Input: head = [1,2,3,4]
+# Output: [2,1,4,3]
 # Example 2:
 
-# Input: l1 = [0], l2 = [0]
-# Output: [0]
+# Input: head = []
+# Output: []
 # Example 3:
 
-# Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
-# Output: [8,9,9,9,0,0,0,1]
+# Input: head = [1]
+# Output: [1]
  
 
 # Constraints:
 
-# The number of nodes in each linked list is in the range [1, 100].
-# 0 <= Node.val <= 9
-# It is guaranteed that the list represents a number that does not have leading zeros.
+# The number of nodes in the list is in the range [0, 100].
+# 0 <= Node.val <= 100
 class Solution:
     def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if head and head.next:
