@@ -40,7 +40,6 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    val: int=0
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
         if not root:
             return 0
