@@ -56,22 +56,12 @@ else:
 cnt=1
 def move(y, x, d):
     global cnt
-    if d==0:
+    if d==0 or d==2:
         if grid[y][x]=='/':
             d=(d+1)%4
         else:
             d=(d+3)%4
-    elif d==1:
-        if grid[y][x]=='/':
-            d=(d+3)%4
-        else:
-            d=(d+1)%4
-    elif d==2:
-        if grid[y][x]=='/':
-            d=(d+1)%4
-        else:
-            d=(d+3)%4
-    else:
+    elif d==1 or d==3:
         if grid[y][x]=='/':
             d=(d+3)%4
         else:
