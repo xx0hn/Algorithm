@@ -46,7 +46,6 @@
 # 제한
 # 시간 제한: 1000ms
 # 메모리 제한: 80MB
-import itertools
 import copy
 import collections
 n, k, m=map(int, input().split())
@@ -70,13 +69,21 @@ def bfs(sy, sx, tmp_grid):
             if 0<=ny<n and 0<=nx<n and not visited[ny][nx] and tmp_grid[ny][nx]!=1:
                 visited[ny][nx]=1
                 q.append((ny, nx))
-cases=list(itertools.combinations(rocks, m))
-for i in range(len(cases)):
+combs=[]
+def get_combs(cur, comb):
+    if cur==len(rocks):
+        if len(comb)==m:
+            combs.append(comb)
+        return
+    get_combs(cur+1, comb+[rocks[cur]])
+    get_combs(cur+1, comb)
+get_combs(0, [])
+for i in range(len(combs)):
     tmp_grid=copy.deepcopy(grid)
     visited=[[0 for _ in range(n)] for _ in range(n)]
     result=0
     for j in range(m):
-        tmp_grid[cases[i][j][0]][cases[i][j][1]]=0
+        tmp_grid[combs[i][j][0]][combs[i][j][1]]=0
     for j in range(k):
         bfs(s[j][0]-1, s[j][1]-1, tmp_grid)
     for j in range(n):
