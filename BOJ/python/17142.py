@@ -56,6 +56,8 @@ def get_combs(cur, result):
         if len(result)==m:
             cases.append(result)
         return
+    if len(result)>m:
+        return
     get_combs(cur+1, result+[viruses[cur]])
     get_combs(cur+1, result)
 def bfs(sy, sx):
@@ -66,7 +68,7 @@ def bfs(sy, sx):
         y, x=q.popleft()
         for i in range(4):
             ny, nx=y+dy[i], x+dx[i]
-            if 0<=ny<n and 0<=nx<n and grid[ny][nx]!=1 and (visited[ny][nx]==-1 or visited[ny][nx]>visited[y][x]+1):
+            if 0<=ny<n and 0<=nx<n and grid[ny][nx]!=1  and (visited[ny][nx]==-1 or visited[ny][nx]>visited[y][x]+1):
                 visited[ny][nx]=visited[y][x]+1
                 q.append((ny, nx))
 get_combs(0, [])
