@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  practice.cpp
-//
-//  Created by 황승환 on 2020/05/06.
-//  Copyright © 2020 황승환. All rights reserved.
-//
-
 /*
  문제
  선영이는 주말에 할 일이 없어서 새로운 언어 AC를 만들었다. AC는 정수 배열에 연산을 하기 위해 만든 언어이다. 이 언어에는 두 가지 함수 R(뒤집기)과 D(버리기)가 있다.
