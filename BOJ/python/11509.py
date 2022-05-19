@@ -13,12 +13,15 @@
 # 출력
 # 첫 번째 줄 한줄에 최소한 필요한 화살의 개수를 출력한다.
 n=int(input())
-h=list(map(int, input().split()))
-arrow=[0]*(n+1)
-for i in range(n):
-    if arrow[h[i]]:
-        arrow[h[i]]-=1
-        arrow[h[i]-1]+=1
-    else:
-        arrow[h[i]-1]+=1
-print(sum(arrow))
+tmp=list(map(int, input().split()))
+arrow=0
+for i in range(len(tmp)):
+    if tmp[i]>0:
+        arrow+=1
+        cur=tmp[i]-1
+        tmp[i]=0
+        for j in range(i+1, len(tmp)):
+            if cur==tmp[j]:
+                tmp[j]=0
+                cur-=1
+print(arrow)
