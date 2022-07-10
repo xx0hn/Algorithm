@@ -18,6 +18,7 @@
 # 안전도가 제일 높은 비밀번호의 안전도를 출력한다.
 import collections
 import sys
+
 input=sys.stdin.readline
 n=int(input())
 m=int(input())
