@@ -13,6 +13,7 @@
 # 출력
 # 각 테스트 케이스마다 한 줄에 걸쳐 총 감염되는 컴퓨터 수, 마지막 컴퓨터가 감염되기까지 걸리는 시간을 공백으로 구분지어 출력한다.
 import heapq
+
 t=int(input())
 def find_computers(c):
     h=[]
