@@ -26,6 +26,7 @@
 # 현재 주어진 상황에서 몇연쇄가 되는지 출력한다. 하나도 터지지 않는다면 0을 출력한다.
 import collections
 import copy
+
 puyo=[list(str(input())) for _ in range(12)]
 answer=0
 dy, dx=[0, 1, 0, -1], [1, 0, -1, 0]
